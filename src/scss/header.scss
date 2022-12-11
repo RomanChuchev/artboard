@@ -63,6 +63,9 @@
     &:hover {
       color: #0003ff;
     }
+    &:active {
+      font-weight: 700;
+    }
   }
 }
 
@@ -94,12 +97,9 @@
 @keyframes quadmenu_ripple {
   0% {
     transform: scale(0, 0);
-    opacity: 0.3;
+    opacity: 0.5;
   }
-  40% {
-    transform: scale(15, 15);
-    opacity: 0.3;
-  }
+
   100% {
     opacity: 0;
     transform: scale(40, 40);
@@ -109,21 +109,21 @@
 .menu {
   &__list {
     display: grid;
-    grid-template-columns: 10.85% 7.5% 36.33% 7.15% 8.25% 12.57% 7.89% 10%;
+    grid-template-columns: 10.86% 7.5% 36.33% 7.15% 8.25% 12.57% 7.89% 10%;
   }
   &__item {
-    font-size: 14px;
+    padding-top: 13px;
+    font-size: 12px;
     line-height: 19px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    padding-top: 14px;
   }
   &__paper {
-    letter-spacing: normal;
+    letter-spacing: -0.3px;
   }
   &__link {
     position: relative;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 
     &::before {
       content: "";
@@ -132,7 +132,7 @@
       left: 50%;
       width: 5px;
       height: 5px;
-      background: rgba(255, 255, 255, 0.5);
+      background: #0004ff;
       opacity: 0;
       border-radius: 100%;
       transform: scale(1, 1) translate(-50%);
@@ -144,6 +144,9 @@
       &:before {
         animation: quadmenu_ripple 1s cubic-bezier(0.18, 0.74, 0.72, 1);
       }
+    }
+    &:active {
+      font-weight: 700;
     }
   }
   &__menu-select {
@@ -164,12 +167,6 @@
       grid-template-columns: 8% 12% 16% 12% 12% 12% 12% 16%;
     }
   }
-}
-.btn {
-}
-.burger-wrapper {
-}
-.burger {
 }
 
 // Burger

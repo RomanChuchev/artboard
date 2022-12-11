@@ -35,6 +35,7 @@ body {
   font-size: 14px;
   font-family: $mainFont;
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 body.lock {

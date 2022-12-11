@@ -4,7 +4,10 @@
   <body>
     <div class="wrapper">
       @@include('html/header.html', {})
-      <main class="home"></main>
+      <main class="home">
+        @@include('html/sections/adventures.html', {})
+        @@include('html/sections/collections.html', {})
+      </main>
     </div>
     <script src="js/app.min.js"></script>
   </body>
