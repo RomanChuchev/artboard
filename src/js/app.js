@@ -3,8 +3,8 @@ import * as flsFunctions from "./modules";
 import "./modules/burger.js";
 import "./modules/hover.js";
 import "./modules/select.js";
+import "./modules/scroll.js";
 
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
 flsFunctions.isWebp();
-

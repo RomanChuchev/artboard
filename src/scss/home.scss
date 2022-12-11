@@ -5,7 +5,6 @@
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: #0003ff;
   border: unset;
   cursor: pointer;
   font: inherit;
@@ -30,7 +29,8 @@
     padding-top: 225%;
   }
   &:hover .btn__text {
-    color: #0003ff;
+    color: #000;
+    font-weight: 600;
   }
   &__circle {
     background: #fff;
@@ -54,6 +54,7 @@
     text-align: center;
     text-decoration: none;
     padding: 16px 35px;
+    width: 100%;
     z-index: 1000;
     transition: all 0.3s ease, color 0.6s ease;
   }
@@ -73,10 +74,9 @@
   flex: 0 0 25%;
   max-width: 25%;
 }
+
 // Section adventures
 .adventures {
-  &__container {
-  }
   &__content {
     padding-bottom: 472px;
   }
@@ -87,21 +87,30 @@
     text-align: center;
     letter-spacing: 1.64286px;
     text-transform: uppercase;
-    cursor: pointer;
     padding-top: 338px;
     padding-bottom: 495px;
+    a {
+      cursor: pointer;
+      padding: 15px 20px;
+      margin: -15px -20px;
+      border-radius: 50px;
+    }
   }
-  &__bottom {
-    padding-top: 64px;
-    border-top: 1px solid #dedede;
-    display: flex;
-  }
-  &__center {
+
+  &__head {
     position: relative;
     max-width: 1623px;
     margin: 0 auto;
     padding-bottom: 50px;
   }
+  &__body {
+    padding-top: 64px;
+    border-top: 1px solid #939292;
+    display: flex;
+  }
+}
+
+.head-adventures {
   &__title {
     font-family: "Manrope";
     font-style: normal;
@@ -157,6 +166,9 @@
     right: 8.2%;
     transform: rotate(135deg);
   }
+}
+
+.body-adventures {
   &__text {
     font-weight: 500;
     font-size: 20px;
@@ -166,13 +178,14 @@
     max-width: 302px;
   }
   &__card {
-    letter-spacing: -0.1px;
+    letter-spacing: normal;
 
     &:first-child {
       font-weight: 700;
       font-size: 33px;
       line-height: 43px;
       text-transform: uppercase;
+      letter-spacing: -0.1px;
     }
     &:last-child {
       padding-left: 22px;
@@ -225,7 +238,7 @@
     line-height: 34px;
     text-transform: uppercase;
     color: #2445ff;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
     &:first-child {
       margin-top: 5px;
     }
@@ -237,7 +250,7 @@
   &__container {
   }
   &__content {
-    padding-bottom: 200px;
+    padding-bottom: 488px;
   }
   &__title {
     position: relative;
@@ -284,7 +297,7 @@
     margin: 0 auto;
     display: flex;
     max-width: 816px;
-    letter-spacing: -0.1px;
+    letter-spacing: normal;
   }
   &__subtitle {
     font-weight: 700;
@@ -295,12 +308,7 @@
     text-transform: uppercase;
     color: #939393;
     padding-right: 60px;
-    span {
-      &:last-child {
-        display: block;
-        padding: 2px 2px 0 0;
-      }
-    }
+    padding-top: 2px;
   }
   &__text {
     font-weight: 500;
@@ -317,3 +325,86 @@
     }
   }
 }
+
+.team {
+  &__container {
+    max-width: 1851px;
+    box-sizing: border-box;
+  }
+  &__content {
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 83px;
+    letter-spacing: -2.03008px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 90px;
+  }
+  &__row {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 90px;
+    border-top: 1px solid #dedede;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #2445ff;
+  }
+  &__staff {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 44px;
+    color: #ffffff;
+    padding-bottom: 2px;
+  }
+}
+.core-team {
+  &__persons {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    padding-bottom: 18px;
+    &:last-child {
+      padding-left: 70px;
+      .core-team__caption {
+        margin: 5px 0 0 35px;
+      }
+    }
+  }
+  &__figure {
+    display: flex;
+    &:nth-child(3),
+    &:nth-child(4) {
+      .core-team__name {
+        line-height: 34px;
+      }
+    }
+  }
+  &__img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  &__caption {
+    margin: 6px 0 0 31px;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    color: #ececec;
+  }
+  &__role {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #585858;
+  }
+}
+
+
