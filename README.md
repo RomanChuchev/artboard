@@ -8,7 +8,7 @@ Placebo/25 — российско-голландская инвестицион�
 
 ## Запустить проект
 
-#### `git clone https://github.com/RomanChuchev/artbourd.git`
+#### `git clone https://github.com/RomanChuchev/artboard.git`
 
 #### `npm i`
 
@@ -16,4 +16,4 @@ Placebo/25 — российско-голландская инвестицион�
 
 ##
 
-[![Live Demo](./src/images/screenshot.png)](https://romanchuchev.github.io/artbourd/)
+[![Live Demo](./src/images/screenshot.png)](https://romanchuchev.github.io/artboard/)
