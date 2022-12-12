@@ -16,4 +16,4 @@ Placebo/25 — российско-голландская инвестицион�
 
 ##
 
-[![Live Demo](./src/images/screenshot.png)](https://romanchuchev.github.io/artboard/)
+[![Live Demo](./screenshot.png)](https://romanchuchev.github.io/artboard/)

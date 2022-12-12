@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollRight = () => {
     let windowCenter = window.innerHeight / 2 + window.scrollY;
     document.querySelectorAll(".scroll-item-horizontal").forEach((el) => {
-      const elOffset = offset(el).top;
+      const elOffset = offsetScroll(el).top;
       let scrollOffset = el.offsetTop + el.offsetHeight / 2;
       const height = windowCenter - elOffset;
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function offset(el) {
+function offsetScroll(el) {
   var rect = el.getBoundingClientRect(),
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
