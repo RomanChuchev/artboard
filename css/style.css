@@ -612,12 +612,18 @@ body {
   font-weight: 500;
   font-style: normal;
   min-width: 320px;
+  cursor: url(../images/cursor.svg) 10 11, auto;
 }
 
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
+}
+
+a,
+button {
+  cursor: url(../images/cursor-active.svg) 10 11, pointer;
 }
 
 .wrapper {
@@ -660,7 +666,6 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   border: unset;
-  cursor: pointer;
   font: inherit;
   text-decoration: none;
   z-index: 1;
@@ -693,7 +698,7 @@ body {
 }
 
 .btn:hover .btn__text {
-  color: #000;
+  color: #0003ff;
   font-weight: 600;
 }
 
@@ -736,6 +741,45 @@ body {
   transition: all 0.3s ease, color 0.6s ease;
 }
 
+.hover {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: #0003ff;
+  opacity: 0;
+  border-radius: 100%;
+  -webkit-transform: scale(1, 1) translate(-50%);
+      -ms-transform: scale(1, 1) translate(-50%);
+          transform: scale(1, 1) translate(-50%);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  z-index: 1000;
+}
+
+.hover:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.hover:hover:before {
+  -webkit-animation: quadmenu_ripple 1s cubic-bezier(0.18, 0.74, 0.72, 1);
+          animation: quadmenu_ripple 1s cubic-bezier(0.18, 0.74, 0.72, 1);
+}
+
 .col-12 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -766,7 +810,6 @@ body {
 }
 
 .adventures__top a {
-  cursor: pointer;
   padding: 15px 20px;
   margin: -15px -20px;
   border-radius: 50px;
@@ -782,21 +825,10 @@ body {
   position: relative;
   max-width: 150px;
   margin: 0 auto;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .adventures__top a div {
   z-index: -1;
-}
-
-.adventures__top a:hover {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .adventures__start {
@@ -996,7 +1028,11 @@ body {
   line-height: 34px;
   text-transform: uppercase;
   color: #2445ff;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  display: block;
 }
 
 .adventures__subtitle:first-child {
@@ -1130,11 +1166,20 @@ body {
 }
 
 .team__subtitle {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
-  text-transform: uppercase;
+}
+
+.team__subtitle a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #2445ff;
+  padding: 20px;
+  margin: -20px;
 }
 
 .team__staff {
@@ -1227,8 +1272,8 @@ body {
 }
 
 .menu-select__head {
+  cursor: url(../images/cursor-active.svg) 10 11, pointer;
   position: relative;
-  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1716,7 +1761,7 @@ body {
   .adventures__subtitle {
     font-size: 26px;
     line-height: 30px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   .adventures__text_before {
@@ -2076,7 +2121,7 @@ body {
   .adventures__subtitle {
     font-size: 26px;
     line-height: 30px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   .adventures__flashlight-wrapper {
@@ -2220,7 +2265,7 @@ body {
   .adventures__subtitle {
     font-size: 26px;
     line-height: 30px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   .adventures__card:nth-child(1) {
