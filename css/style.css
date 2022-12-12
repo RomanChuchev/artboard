@@ -1336,7 +1336,7 @@ button {
 .menu-select__item:first-child {
   border-top: 1px solid #ececec;
   margin-top: 10px;
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .menu-select__item:hover {
@@ -1397,8 +1397,8 @@ button {
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  padding: 15px;
-  margin: -15px;
+  padding: 15px 15px 10px 15px;
+  margin: -15px -15px -10px -15px;
 }
 
 .menu__link::before {
@@ -1417,7 +1417,7 @@ button {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  z-index: 1000;
+  z-index: -1;
 }
 
 .menu__link:hover {
