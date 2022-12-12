@@ -16,3 +16,9 @@
   margin: 0 auto;
   padding: 0 $mainOffset;
 }
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
