@@ -967,6 +967,7 @@ button {
   text-transform: uppercase;
   color: #dedede;
   max-width: 302px;
+  padding-left: 3px;
 }
 
 .adventures__card {
@@ -978,15 +979,16 @@ button {
   font-size: 33px;
   line-height: 43px;
   text-transform: uppercase;
-  letter-spacing: -0.1px;
+  letter-spacing: 0;
+  margin-left: -2px;
 }
 
 .adventures__card:last-child {
-  padding-left: 22px;
+  padding-left: 24px;
 }
 
 .adventures__text_before {
-  padding-left: 2px;
+  padding-left: 3px;
   margin-bottom: 35px;
   position: relative;
 }
@@ -1008,7 +1010,7 @@ button {
 }
 
 .adventures__text_after {
-  padding-left: 2px;
+  padding-left: 3px;
   position: relative;
 }
 
@@ -1125,6 +1127,11 @@ button {
   color: #939393;
   padding-right: 60px;
   padding-top: 2px;
+}
+
+.collections__subtitle div:last-child {
+  display: block;
+  margin: 1px 3px;
 }
 
 .collections__text {
