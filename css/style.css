@@ -898,8 +898,8 @@ button {
 
 .adventures__card3d {
   position: absolute;
-  top: -133px;
-  left: -97px;
+  top: 193px;
+  left: 197px;
   pointer-events: none;
 }
 
@@ -1094,8 +1094,8 @@ button {
 
 .collections__left-card {
   position: absolute;
-  top: -32.5%;
-  left: 20.8%;
+  top: -21.2%;
+  left: 22%;
   width: 1228px;
   height: 1228px;
   pointer-events: none;
@@ -1584,14 +1584,19 @@ button {
     line-height: clamp(100px, 1315.068vw, 130px);
   }
 
-  .adventures__card3d {
-    top: -20%;
-    left: -10%;
+  .adventures__p2 {
+    padding-top: 2px;
+    padding-left: 300px;
   }
 
-  .adventures__card3d.aos-animate {
-    -webkit-animation: anim3d 2s 0.5s ease-in-out infinite alternate;
-            animation: anim3d 2s 0.5s ease-in-out infinite alternate;
+  .adventures__p4,
+  .adventures__p5 {
+    padding-left: 400px;
+  }
+
+  .adventures__card3d {
+    top: 140px;
+    left: -20px;
   }
 
   .collections__right-card {
@@ -1655,8 +1660,10 @@ button {
   }
 
   .adventures__card3d {
-    top: -20%;
-    left: -10%;
+    width: 500px;
+    height: 500px;
+    top: 110px;
+    left: 40px;
   }
 
   .adventures__flashlight-wrapper {
@@ -1757,8 +1764,10 @@ button {
   }
 
   .adventures__card3d {
-    top: -30%;
-    left: -40%;
+    width: 400px;
+    height: 400px;
+    top: 110px;
+    left: 40px;
   }
 
   .adventures__text {
@@ -2120,11 +2129,6 @@ button {
     padding-left: 140px;
   }
 
-  .adventures__card3d {
-    top: -30%;
-    left: -40%;
-  }
-
   .adventures__text {
     font-size: 16px;
     line-height: 28px;
@@ -2261,8 +2265,11 @@ button {
   }
 
   .adventures__card3d {
-    top: -15%;
-    left: -50%;
+    width: 250px;
+    height: 250px;
+    top: -60px;
+    left: auto;
+    right: -40px;
   }
 
   .adventures__text {
