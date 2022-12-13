@@ -908,6 +908,11 @@ button {
           animation: anim3d 2s 0.5s ease-in-out infinite alternate;
 }
 
+.adventures__card3d img {
+  width: 755px;
+  height: 755px;
+}
+
 .adventures__p2 {
   padding-top: 2px;
   padding-left: 458px;
@@ -921,6 +926,11 @@ button {
 .adventures__flashlight-wrapper {
   padding-top: 278px;
   position: relative;
+}
+
+.adventures__flashlight-wrapper img {
+  width: 79px;
+  height: 118px;
 }
 
 .adventures__flashlight1 {
@@ -1092,6 +1102,11 @@ button {
   animation: anim3d 2s 0.5s ease-in-out infinite alternate-reverse;
 }
 
+.collections__right-card img {
+  width: 708px;
+  height: 708px;
+}
+
 .collections__left-card {
   position: absolute;
   top: -21.2%;
@@ -1105,6 +1120,11 @@ button {
 .collections__left-card.aos-animate {
   -webkit-animation: anim3d 2s 0.5s ease-in-out infinite alternate;
           animation: anim3d 2s 0.5s ease-in-out infinite alternate;
+}
+
+.collections__left-card img {
+  width: 688px;
+  height: 688px;
 }
 
 .collections__body {
@@ -1234,8 +1254,8 @@ button {
 }
 
 .core-team__img {
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .core-team__caption {
