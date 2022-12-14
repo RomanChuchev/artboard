@@ -2,7 +2,7 @@
 <html lang="ru">
   @@include('html/head.html', { 'title': 'ArtBoard - by Roman Chuchev' })
   <body>
-    <div class="wrapper">
+    <div data-scroll-container class="wrapper">
       @@include('html/header.html', {})
       <main class="home">
         @@include('html/sections/adventures.html', {})
@@ -10,10 +10,7 @@
         @@include('html/sections/team.html', {})
       </main>
     </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
-    ></script>
+
     <script defer src="js/app.min.js"></script>
   </body>
 </html>

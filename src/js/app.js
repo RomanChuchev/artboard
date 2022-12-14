@@ -8,8 +8,3 @@ import "./modules/scroll.js";
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
 flsFunctions.isWebp();
-AOS.init({
-  duration: 500,
-  easing: "ease-in-out",
-});
-

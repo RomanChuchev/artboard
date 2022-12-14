@@ -1,7 +1,5 @@
 .header {
   z-index: 10000;
-  // animation: translateY 1s forwards;
-
   padding-top: 27px;
   padding-bottom: 9px;
 
@@ -13,7 +11,8 @@
     display: none;
   }
   &.fixed {
-    animation: translateY 0.8s;
+    opacity: 1 !important;
+    animation: translateY 0.8s forwards;
     padding-top: 10px;
     padding-bottom: 0px;
     background: rgba(0, 0, 0, 0.8);
