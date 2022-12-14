@@ -3,17 +3,17 @@
     <div id="adventures-top" data-scroll class="adventures__content">
       <div class="adventures__top">
         <a class="hover" href="#adventures"
-          ><div data-scroll data-scroll-class="adventures-slide-in-left">S</div>
-          <div data-scroll data-scroll-class="adventures-slide-in-bl">T</div>
+          ><div data-scroll data-scroll-class="adventures-start-in-left">S</div>
+          <div data-scroll data-scroll-class="adventures-start-in-bl">T</div>
           <div
             data-scroll
-            data-scroll-class="adventures-slide-in-bottom"
+            data-scroll-class="adventures-start-in-bottom"
             class="adventures__start"
           >
             A
           </div>
-          <div data-scroll data-scroll-class="adventures-slide-in-br">R</div>
-          <div data-scroll data-scroll-class="adventures-slide-in-right">
+          <div data-scroll data-scroll-class="adventures-start-in-br">R</div>
+          <div data-scroll data-scroll-class="adventures-start-in-right">
             T
           </div></a
         >
@@ -38,7 +38,7 @@
           </p>
           <p
             data-scroll
-            data-scroll-class="slide-in-blurred-left"
+            data-scroll-class="slide-in-left"
             data-scroll-repeat
             class="adventures__p3"
           >
@@ -67,6 +67,7 @@
             <div
               data-scroll
               data-scroll-speed="-1"
+              data-scroll-delay="0.02"
               data-scroll-direction="horizontal"
               data-scroll-repeat
             >
@@ -76,46 +77,56 @@
         </div>
 
         <div class="adventures__flashlight-wrapper">
-          <div data-scroll data-scroll-speed="1" data-scroll-repeat>
+          <div data-scroll data-scroll-speed="1" data-scroll-delay="0.01" data-scroll-repeat>
             <div class="adventures__flashlight1">
               <img loading="lazy" src="./images/light.png" alt="flashlight" />
             </div>
           </div>
-          <div data-scroll data-scroll-speed="2" data-scroll-repeat>
+          <div data-scroll data-scroll-speed="2" data-scroll-delay="0.02" data-scroll-repeat>
             <div class="adventures__flashlight2">
               <img loading="lazy" src="./images/light.png" alt="flashlight" />
             </div>
           </div>
-          <div data-scroll data-scroll-speed="3" data-scroll-repeat>
+          <div data-scroll data-scroll-speed="3" data-scroll-delay="0.03" data-scroll-repeat>
             <div class="adventures__flashlight3">
               <img loading="lazy" src="./images/light.png" alt="flashlight" />
             </div>
           </div>
-          <div data-scroll data-scroll-speed="4" data-scroll-repeat>
+          <div data-scroll data-scroll-speed="4" data-scroll-delay="0.04" data-scroll-repeat>
             <div class="adventures__flashlight4">
               <img loading="lazy" src="./images/light.png" alt="flashlight" />
             </div>
           </div>
         </div>
       </div>
-      <div data-scroll data-scroll-speed="2">
+      <div data-scroll data-scroll-speed="2" data-scroll-delay="0.02">
         <div class="border">
           <div data-scroll data-scroll-class="animate"></div>
         </div>
       </div>
       <div class="adventures__body">
-        <div data-scroll data-scroll-speed="1" class="adventures__card col-12">
-          <p data-scroll data-scroll-class="adventures-slide-in-left">
+        <div
+          data-scroll
+          data-scroll-speed="1"
+          data-scroll-delay="0.02"
+          class="adventures__card col-12"
+        >
+          <p data-scroll data-scroll-class="adventures-start-in-left">
             You will be in individual
           </p>
-          <p data-scroll data-scroll-class="adventures-slide-in-left">
+          <p data-scroll data-scroll-class="adventures-start-in-left">
             and collective
           </p>
-          <p data-scroll data-scroll-class="adventures-slide-in-left">
+          <p data-scroll data-scroll-class="adventures-start-in-left">
             competitions.
           </p>
         </div>
-        <div class="adventures__card col-6">
+        <div
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-delay="0.03"
+          class="adventures__card col-6"
+        >
           <div data-scroll data-scroll-class="tracking-in-contract-bck-bottom">
             <a href="#" class="adventures__subtitle hover"> individual </a>
           </div>
@@ -129,7 +140,12 @@
           </p>
         </div>
 
-        <div class="adventures__card col-6">
+        <div
+          data-scroll
+          data-scroll-speed="3"
+          data-scroll-delay="0.04"
+          class="adventures__card col-6"
+        >
           <div data-scroll data-scroll-class="tracking-in-contract-bck-bottom">
             <div
               data-scroll-class="tracking-in-contract-bck-bottom"
