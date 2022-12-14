@@ -1,11 +1,11 @@
 @use "sass:math";
+@import "config/animations";
 
 @import "config/fonts";
 @import "config/vars";
 @import "config/scrollbar";
 @import "config/global";
 @import "config/reset";
-@import "config/animations";
 
 // Подключение миксинов ===========================================================================================================================================================================================================================================================================
 @import "config/mixins";
