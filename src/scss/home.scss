@@ -359,6 +359,10 @@
     }
   }
   @media (max-width: $pc) {
+    &__top {
+      padding-top: 35vh;
+      padding-bottom: 35ch;
+    }
     &__title {
       p {
         font-size: clamp(60px, 1100vw, 110px);
@@ -403,7 +407,7 @@
 
   @media (max-width: $tablet) {
     &__content {
-      padding-bottom: 400px;
+      padding-bottom: 200px;
     }
     &__body {
       flex-direction: column;
@@ -459,7 +463,7 @@
   }
   @media (max-width: $mobile) {
     &__content {
-      padding-bottom: 300px;
+      padding-bottom: 100px;
     }
     &__body {
       flex-direction: column;
@@ -797,14 +801,13 @@
     }
     &__left-card {
       top: 25%;
-      left: 0%;
-      width: 360px;
-      height: 360px;
+      left: -10%;
+      width: 320px;
+      height: 320px;
     }
     &__title {
       span {
         font-size: 100px;
-        margin: -200px;
         line-height: 514px;
       }
     }

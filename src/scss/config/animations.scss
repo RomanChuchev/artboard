@@ -141,6 +141,7 @@
 }
 
 .slide-in-left {
+  will-change:  transform, opacity;
   -webkit-animation: slide-in-blurred-left 2s 0.1s
     cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: slide-in-blurred-left 2s 0.1s cubic-bezier(0.23, 1, 0.32, 1) both;
@@ -198,6 +199,7 @@
 }
 
 .slide-in-blurred-tl {
+  will-change:  transform, opacity;
   -webkit-animation: slide-in-blurred-tl 2s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: slide-in-blurred-tl 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
@@ -249,6 +251,7 @@
 }
 
 .slide-in-blurred-right {
+  will-change:  transform, opacity;
   -webkit-animation: slide-in-blurred-right 2s 0.1s
     cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: slide-in-blurred-right 2s 0.1s cubic-bezier(0.23, 1, 0.32, 1) both;
@@ -306,6 +309,7 @@
 }
 
 .slide-in-blurred-br {
+  will-change:  transform, opacity;
   -webkit-animation: slide-in-blurred-br 2s 0.1s cubic-bezier(0.23, 1, 0.32, 1)
     both;
   animation: slide-in-blurred-br 2s 0.1s cubic-bezier(0.23, 1, 0.32, 1) both;
